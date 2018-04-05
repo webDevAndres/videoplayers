@@ -1,0 +1,160 @@
+body {
+    background-image: url("../images/7123.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    }
+    /* Navbar */
+    
+    .topNav {
+        background-color: #181616;
+        padding: 20px;
+        text-align: center;
+        overflow:hidden;
+    }
+    
+    .topNav a {
+        color: #f2f2f2;
+        padding: 14px 16px;
+        text-decoration: none;
+        cursor:pointer;
+    }
+    
+    .topNav a:hover {
+        border-radius: 6%;
+    }
+    
+    .topNav .icon {
+        color:white;
+    }
+    
+    /**********
+    End Navbar
+    **********/
+    
+    /* Main section */
+    .main {
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+    
+    header {
+        background-color: rgba(185, 189, 185, 0.51);
+        text-indent: 1%;
+        font-weight: 600;
+    }
+    
+    /*
+    End main section
+    */
+    
+    
+    
+    /* html 5 videos */
+    .hero-main {
+        display:none;
+    }
+    .animals{
+        background-color: rgba(185, 189, 185, 0.87);
+        padding:20px;
+    }
+    
+    .textCenter {
+        text-align:center;
+    }
+    
+    video {
+    width: 100%;
+        overflow: hidden;
+    }
+    
+    
+    
+    
+    /****************** 
+    End html5 videos section
+    ******************/
+    
+    footer {
+        left:0;
+        right:0;
+        bottom: 0;
+        margin-top:10%;
+        padding: 15px;
+        color:white;
+        background-color: #000000;
+    }
+    
+    footer a {
+        color: #C7C0C0;
+    }
+    
+    
+    
+    
+    
+    
+    /* Media Queries */
+    /* Tablet */
+    @media only screen and (min-width: 600px) {
+        .topNav .icon {
+            display: none;
+        }
+       
+        .main {
+            margin-top: 2%;
+        }
+        .hero-main {
+            display:block;
+        }
+        
+    
+    }
+    
+    
+    /* desktop */
+    @media only screen and (min-width: 768px) {
+        
+    }
+    
+    
+    
+    
+    
+    /* When the screen is less than 600px wide hides all links except for the Home link. */
+    @media screen and (max-width: 600px) {
+        .topNav a:not(:first-child) {
+           display: none;
+       }
+       .topNav a.icon {
+           position:absolute;
+           float: right;
+           right: 0;
+           top: 0;
+           display: block;
+       }
+    }
+    
+    /* The responsive class is added to the topNav with JavaScript when the user clicks on the icon. This displays the link vertically instead of horizontally */
+    @media screen and (max-width: 600px) {
+       .topNav.responsive {
+           position: relative;
+       }
+       .topNav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+       .topNav.responsive a {
+       float: none;
+       display: block;
+       text-align: center;
+    }
+    }
+    
+    
+    
+    
+    /*************
+    End Media Queries 
+    *************/

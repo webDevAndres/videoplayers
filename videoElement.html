@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Html 5 Video Element</title>
+
+    <!-- Jquery -->
+    <script src="jquery-3.2.1.js"></script>
+
+    <!-- Custom Style Sheets -->
+    <link rel="stylesheet" href="css/responsive-grid.css">
+    <link rel="stylesheet" href="css/videoElement.css">
+
+    <!-- JavaScript for toggle button -->
+    <script src="js/buttons.js"></script>
+</head>
+
+<body>
+    <div class="row">
+        <div class="topNav" id="myTopNav">
+            <a href="#home">Home</a>
+            <a href="#hospitalsClinics">Videos</a>
+            <a href="#services">Forums</a>
+            <a href="#contactUs">Events</a>
+            <a href="#services">Services</a>
+            <a href="#contactUs">Contact Us</a>
+            <a href="javascript:void(0);" class="icon" onclick="openClose()">&#9776;</a>
+        </div>
+    </div>
+
+
+
+
+
+
+    <div class="row hero-main">
+        <video autoplay loop muted>
+            <source src="videos/I_Just_Wanted.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
+            <source src="videos/I_Just_Wanted.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
+        </video>
+    </div>
+
+
+
+    <section class="main">
+        <div class="row">
+            <div class="col-m-6">
+                <header>
+                    <h1>Html5 video element</h1>
+                    <p>To show a video on your page you need to use the video element.</p>
+                    <p>The video element comes with a few attributes that allow the video to be paused, played, and volume control.</p>
+                    <p>You must include the source element within the video element. The source element allows you to have alternative
+                        video formats.</p>
+                </header>
+            </div>
+
+            <div class="col-m-6">
+                <header>
+                    <h1>Supported video formats:</h1>
+                    <p>Chrome, opera 25, and Firefox support MP4, WebM, and ogg.</p>
+                    <p>Safari and internet explorer only support MP4 video formats.</p>
+                    <p>HTML5 defines the DOM properties, methods, and events for the video. This allows for the use of JavaScrirpt
+                        to manipulate audio and video elements.</p>
+                </header>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <section class="animals">
+        <h1 class="textCenter">Html5 video in action</h1>
+        <div class="row">
+            <div class="col-m-6 col-3">
+                <video controls>
+                    <source src="videos/Pigeon-Impossible.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
+                    <source src="videos/Pigeon-Impossible.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
+                </video>
+                <p>When embedding a video you have the option to show controls.</p>
+            </div>
+            <div class="col-m-6 col-3">
+                <video controls poster="images/Pigeon-Impossible.jpg">
+                    <source src="videos/Three-Swans.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
+                    <source src="videos/Three-Swans.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
+                </video>
+                <p>You can also use the poster attribute to have an image show up instead until the video plays.</p>
+            </div>
+            <div class="col-m-6 col-3">
+                <video controls muted>
+                    <source src="videos/Coverr-Lulu.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
+                    <source src="videos/Coverr-Lulu.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
+                </video>
+                <p>If the video you want to play has sound you don't want playing, you can mute the video with the mute attribute.</p>
+            </div>
+            <div class="col-m-6 col-3">
+                <video autoplay controls>
+                    <source src="videos/Rolling-horse.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
+                    <source src="videos/Rolling-horse.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
+                </video>
+                <p>There is also an autoplay attrubute that plays the video when it is ready.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam fuga aspernatur officiis neque eos asperiores, vero
+            optio commodi nostrum officia obcaecati non? Esse facilis molestias repudiandae, accusamus debitis quod unde.
+        </p>
+        <a href="'http://www.freepik.com/free-vector/polygonal-shapes-on-a-transparent-background_1074458.htm">Designed by Freepik</a>
+    </footer>
+
+
+
+
+
+</body>
+
+</html>
